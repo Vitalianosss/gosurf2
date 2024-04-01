@@ -1,0 +1,134 @@
+@import 
+'globals',
+'mixins',
+'header';
+
+
+@media(max-width: 1196px){
+    .arrow-bottom{
+        bottom: 8rem;
+    }
+}
+
+@media (max-width: 1166px){
+    html{
+        font-size: calc(1vw / 0.72);
+    }
+    .go_surf-opacity{
+        width: 39%;
+    }
+    .header__right{
+        width: 100%;
+    }
+    .header-map{
+       img:first-child{
+        width: 100%;
+       }
+       img:nth-child(2){
+        width: 18%;
+       }
+    }
+    .header-line-swiper-item{
+        width: 12.5rem;
+    }
+}
+
+@media (max-width: 700px){
+    .header-burger{
+        display: block;
+        position: absolute;
+        top: 30rem;
+    }
+    .header__left-bottom{
+        justify-content: center;
+        gap: 3.125rem;
+        width: auto;
+        position: absolute;
+        display: none;
+        top: 20rem;
+        left: 10rem;
+        z-index: 10;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.902);
+        ul{
+            flex-direction: row;
+            column-gap: 3rem;
+            margin-bottom: 2rem;
+            li{
+                display: flex;
+                align-items: flex-start;
+                height: auto;
+                a{
+                    font-size: max(1rem, 10px);
+                    white-space: nowrap;
+                    height: 100%;
+                    justify-content: space-between;
+                    width: 40px;
+                }
+            }
+        }
+        .date-bottom{
+            font-size: max(1rem, 12px);
+            margin-bottom: 2rem;
+        }
+        .location{
+            gap: 1rem;
+            justify-content: center;
+            p{
+                font-size: min(2rem, 12px);
+            }
+        }
+        .location-image{
+            width: 2rem;
+        }
+        .header-lupa{
+            align-self: flex-start;
+            margin-bottom: 3rem;
+            width: 3rem;
+        }
+        .img_menu{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+    .arrow-bottom{
+        left: 4rem;
+    }
+    .header-right-bottom{
+        padding-right: 4rem;
+    }
+    .header-line-swiper{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .header-line-swiper-item{
+        width: 25rem;
+    }
+    .swiper-text{
+        white-space: nowrap;
+        h3{
+            font-size: max(2rem, 14px);
+        }
+        p{
+            font-size: max(1rem, 10px);
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .header-burger{
+        margin-left: 2rem;
+    }
+    .header-map{
+        p:nth-child(8){
+            right: 19.5rem;
+        }
+        p:nth-child(9){
+            right: 29.5rem;
+        }
+    }
+}
+
+.display-active{
+    display: block;
+}
